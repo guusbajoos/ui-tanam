@@ -9,7 +9,7 @@ import BaseButton from '@shared/components/BaseButton/BaseButton';
 
 const ReactPlayer = dynamic(() => import('react-player'), { ssr: false });
 
-const SectionImages = ({ image, index, imageButtonClick }) => {
+const SectionImages = ({ image, index, imageButtonClick, isQualified, isUnqualifiedLocation, isUnqualifiedBudget }) => {
 	const windowSize = useResponsive();
 
 	const baseURL =
@@ -71,6 +71,15 @@ const SectionImages = ({ image, index, imageButtonClick }) => {
 		}
 	};
 
+	const instagramTanamUrl = "https://www.instagram.com/tanamgigi";
+	const whatsappTanamUrl = "https://api.whatsapp.com/send?phone=6281219130879&text=Hi%20Tanam%2C%20aku%20mau%20tahu%20lebih%20lanjut%20tentang%20Tanam%F0%9F%A6%B7%F0%9F%98%8A";
+
+	const handleClick = () => {
+		// You can add any additional logic here before redirecting, if needed.
+		// For example, logging the click, tracking, etc.
+		console.log("Image button clicked!");
+	};
+
 	return (
 		<div className='w-full' id={image.section_tag}>
 			{/* Container adjusts layout based on the presence of a video */}
@@ -113,6 +122,58 @@ const SectionImages = ({ image, index, imageButtonClick }) => {
 							}),
 						}}
 					>
+
+						{isUnqualifiedLocation && (
+							<a
+								href={instagramTanamUrl}
+								target='_blank' // Opens the URL in a new tab
+								rel='noopener noreferrer' // Recommended for security when using target="_blank"
+								onClick={handleClick}
+								className='image-button-link' // Optional: for styling the anchor tag
+							>
+								<img
+									src='/assets/png/follow-instagram-tanamgigi.png'
+									alt='Follow Tanamgigi on Instagram!' // Important for accessibility
+									className='responsive-instagram-loc-img' // Optional: for styling the image
+									style={{ cursor: 'pointer' }} // Adds a pointer cursor to indicate it's clickable
+								/>
+							</a>
+						)}
+
+						{isUnqualifiedBudget && (
+							<a
+								href={instagramTanamUrl}
+								target='_blank' // Opens the URL in a new tab
+								rel='noopener noreferrer' // Recommended for security when using target="_blank"
+								onClick={handleClick}
+								className='image-button-link' // Optional: for styling the anchor tag
+							>
+								<img
+									src='/assets/png/follow-instagram-tanamgigi.png'
+									alt='Follow Tanamgigi on Instagram!' // Important for accessibility
+									className='responsive-instagram-bud-img' // Optional: for styling the image
+									style={{ cursor: 'pointer' }} // Adds a pointer cursor to indicate it's clickable
+								/>
+							</a>
+						)}
+
+						{isQualified && !isUnqualifiedLocation && !isUnqualifiedBudget && (
+							<a
+								href={whatsappTanamUrl}
+								target='_blank' // Opens the URL in a new tab
+								rel='noopener noreferrer' // Recommended for security when using target="_blank"
+								onClick={handleClick}
+								className='image-button-link' // Optional: for styling the anchor tag
+							>
+								<img
+									src='/assets/png/klik-di-sini.png'
+									alt='Redirect to Tanamgigi Whatsapp' // Important for accessibility
+									className='responsive-whatsapp-img' // Optional: for styling the image
+									style={{ cursor: 'pointer' }} // Adds a pointer cursor to indicate it's clickable
+								/>
+							</a>
+						)}
+
 						{image.button_is_active && (
 							<div
 								className={clsx('grid place-content-center justify-items-center', {

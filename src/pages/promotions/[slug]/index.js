@@ -43,9 +43,6 @@ export default function PromotionSlug({ pages, promotion, clinics }) {
 	const unqualifiedBudgetPage = slug.includes('unqualified-budget');
 	const unqualifiedLocationPage = slug.includes('unqualified-location');
 
-	console.log('xx unqualifiedBudgetPage = ' + unqualifiedBudgetPage);
-	console.log('xx unqualifiedLocationPage = ' + unqualifiedLocationPage);
-
 	const handleScrollToForm = () => {
 		if (formRef.current) {
 			formRef.current.scrollIntoView({ behavior: 'smooth' });
