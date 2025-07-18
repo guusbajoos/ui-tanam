@@ -1,0 +1,48 @@
+{
+    "theme_color": "#1c7c70",
+    "background_color": "#1c7c70",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Tanam Gigi",
+    "short_name": "Tanam Gigi",
+    "description": "Tanam: Inovasi baru untuk menggantikan gigi ompong tanpa bedah, lebih aman dan minim rasa sakit.",
+    "icons": [
+        {
+            "src": "/assets/16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

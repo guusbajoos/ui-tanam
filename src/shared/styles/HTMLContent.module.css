@@ -1,0 +1,105 @@
+/* HTMLContent.module.css */
+.htmlContainer {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.htmlContainer * {
+    box-sizing: border-box;
+}
+
+.htmlContainer p {
+    margin: 0 0 10px;
+}
+
+.htmlContainer ul,
+.htmlContainer ol {
+    padding-left: 30px;
+    margin: 0 0 10px;
+}
+
+.htmlContainer ul {
+    list-style-type: disc;
+}
+
+.htmlContainer ul ul {
+    list-style-type: circle;
+}
+
+.htmlContainer ul ul ul {
+    list-style-type: square;
+}
+
+.htmlContainer ol {
+    list-style-type: decimal;
+}
+
+.htmlContainer ol ol {
+    list-style-type: lower-alpha;
+}
+
+.htmlContainer ol ol ol {
+    list-style-type: lower-roman;
+}
+
+.htmlContainer ul[style*="list-style-type:"],
+.htmlContainer ol[style*="list-style-type:"] {
+    list-style-type: attr(style);
+}
+
+.htmlContainer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.htmlContainer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.htmlContainer a:hover {
+    text-decoration: underline;
+}
+
+.htmlContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.htmlContainer table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.htmlContainer table,
+.htmlContainer th,
+.htmlContainer td {
+    border: 1px solid #ccc;
+}
+
+.htmlContainer th,
+.htmlContainer td {
+    padding: 5px 10px;
+}
+
+.htmlContainer blockquote {
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.htmlContainer pre,
+.htmlContainer code {
+    font-family: monospace;
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.htmlContainer pre {
+    padding: 10px;
+    overflow-x: auto;
+}

@@ -1,0 +1,13 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "775410964859.dkr.ecr.ap-southeast-1.amazonaws.com/implant-ui:latest",
+		"Update": "true"
+	},
+	"Ports": [
+		{
+			"ContainerPort": "3000"
+		}
+	],
+	"Logging": "/var/log/nginx"
+}

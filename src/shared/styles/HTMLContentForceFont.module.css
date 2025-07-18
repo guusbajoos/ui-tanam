@@ -1,0 +1,168 @@
+/* HTMLContent.module.css */
+.htmlContainer {
+    line-height: 1.6;
+    color: #333;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer * {
+    box-sizing: border-box;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer p {
+    margin: 0 0 10px;
+    font-family: var(--font-centurygp) !important;
+}
+
+.htmlContainer ul,
+.htmlContainer ol {
+    padding-left: 30px;
+    margin: 0 0 10px;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ul {
+    list-style-type: disc;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ul ul {
+    list-style-type: circle;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ul ul ul {
+    list-style-type: square;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ol {
+    list-style-type: decimal;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ol ol {
+    list-style-type: lower-alpha;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ol ol ol {
+    list-style-type: lower-roman;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer ul[style*="list-style-type:"],
+.htmlContainer ol[style*="list-style-type:"] {
+    list-style-type: attr(style);
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer a {
+    color: #0066cc;
+    text-decoration: none;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer a:hover {
+    text-decoration: underline;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.htmlContainer table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer table,
+.htmlContainer th,
+.htmlContainer td {
+    border: 1px solid #ccc;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer th,
+.htmlContainer td {
+    padding: 5px 10px;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer blockquote {
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer pre,
+.htmlContainer code {
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+.htmlContainer pre {
+    padding: 10px;
+    overflow-x: auto;
+    font-family: var(--font-centurgp) !important;
+    line-height: 1.5 !important;
+}
+
+@media (max-width: 768px) {
+
+    .htmlContainer,
+    .htmlContainer *,
+    .htmlContainer p,
+    .htmlContainer ul,
+    .htmlContainer ol,
+    .htmlContainer ul ul,
+    .htmlContainer ul ul ul,
+    .htmlContainer ol ol,
+    .htmlContainer ol ol ol,
+    .htmlContainer ul[style*="list-style-type:"],
+    .htmlContainer ol[style*="list-style-type:"],
+    .htmlContainer hr,
+    .htmlContainer a,
+    .htmlContainer a:hover,
+    .htmlContainer table,
+    .htmlContainer th,
+    .htmlContainer td,
+    .htmlContainer blockquote,
+    .htmlContainer pre,
+    .htmlContainer code {
+        line-height: 2 !important;
+    }
+}
